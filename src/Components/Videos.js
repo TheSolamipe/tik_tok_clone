@@ -25,7 +25,11 @@ function Videos() {
         ref={videoRef}
         src="https://www.tiktok.com/@zicsaloma/video/6861141133490146566"
       ></video>
-      <VideoFooter />
+      <VideoFooter
+        channel="blvckrage"
+        description="world best programmer"
+        song="The Great and confident dude!"
+      />
       {/* {Video sidebar} */}
     </div>
   );
