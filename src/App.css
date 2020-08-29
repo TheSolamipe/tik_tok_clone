@@ -2,8 +2,29 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+.app {
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
 .app__videos {
   position: relative;
-  overflow: hidden;
-  height: 500px;
+  overflow: scroll;
+  height: 750px;
+  width: 80%;
+  max-width: 500px;
+  scroll-snap-type: y mandatory;
+}
+
+/* Hide scrollbar fro chrome, safari and Opera */
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.app__vidoes {
+  -ms-overflow-style: none; /*IE and Edge*/
+  scrollbar-width: none; /*Firefox*/
 }

@@ -1,12 +1,17 @@
 import React from "react";
 import "./App.css";
-import Video from "./Components/Videos";
+import Videos from "./Components/Videos";
 
 function App() {
   return (
-    <div className="app__videos">
-      <h1>yo world!</h1>
-      <Video />
+    <div className="app">
+      <div className="app__videos">
+        <Videos />
+        <Videos />
+        <Videos />
+        <Videos />
+        <Videos />
+      </div>
     </div>
   );
 }
