@@ -1,7 +1,7 @@
 .videoFooter {
   position: relative;
   bottom: 130px;
-  color: black;
+  color: white;
   display: flex;
   margin-left: 40px;
 }
@@ -20,7 +20,7 @@
 .videoFooter__record {
   animation: spinTheRecord infinite 5s linear;
   height: 50px;
-  /* filter: invert(1); */
+  filter: invert(1);
   position: absolute;
   bottom: 0;
   right: 20px;

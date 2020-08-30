@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./../styles/Videos.css";
 import VideoFooter from "./VideoFooter";
+import VideoSidebar from "./VideoSidebar";
 
-function Videos() {
+function Videos({ url, channel, description, song, likes, messages, shares }) {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef(null);
 
@@ -23,14 +24,10 @@ function Videos() {
         loop
         onClick={onVideoPress}
         ref={videoRef}
-        src="https://www.tiktok.com/@zicsaloma/video/6861141133490146566"
+        src={url}
       ></video>
-      <VideoFooter
-        channel="blvckrage"
-        description="world best programmer"
-        song="The Great and confident dude!"
-      />
-      {/* {Video sidebar} */}
+      <VideoFooter channel={channel} description={description} song={song} />
+      <VideoSidebar likes={likes} shares={shares} messages={messages} />
     </div>
   );
 }
