@@ -3,13 +3,28 @@
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Contra",
+    "BR Firma Medium", sans-serif, "MinionPro";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    monospace, "Contra", "BR Firma Medium", "MinionPro";
+}
+
+@font-face {
+  font-family: "Contra";
+  src: url("/contra.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "BR Firma Medium";
+  src: url("/BR Firma Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MinionPro";
+  src: url("/MinionPro-Regular.otf") format("opentype");
 }
